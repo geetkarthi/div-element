@@ -1,0 +1,82 @@
+body{
+    background: #000000;
+}
+
+.canvas{
+    background: #f5e663;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 200px;
+    left: 750px;}
+
+.draggers{
+    width: 100%;
+    height: 100%;
+    border: 2px solid#888888;
+    box-sizing: border-box;
+}
+
+
+.canvas .draggers .cursor{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #f5e663;
+    border: 2px solid #888888;
+}
+
+.canvas .draggers .cursor.top-left{
+    position: relative;
+    left: -5px;
+    top: -5px;
+    cursor: nwse-resize;
+}
+
+.canvas .draggers .cursor.top-right{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    cursor: nesw-resize;
+}
+
+.canvas .draggers .cursor.bottom-right{
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    cursor: nwse-resize;
+}
+
+.canvas .draggers .cursor.bottom-left{
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    cursor: nesw-resize;
+}
+
+.canvas:hover{
+    cursor: grab;
+}
+
+.turners{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #eb413b;
+    border: 2px solid #888888;
+    position: absolute;
+    right: 50%;
+    top: -25px;
+    cursor: help;
+
+}
+.middle{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #e12ff5;
+
+}
